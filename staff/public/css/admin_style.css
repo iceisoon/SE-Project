@@ -1,0 +1,123 @@
+.add{
+    position: relative;
+    top: 7%; left: 7%;
+    padding: 10px;
+    width: 84%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+input[type=text],input[type=password]{
+	position: relative;
+    margin-top: 2%;
+    left: 2%;
+    width: 17%;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.submit{
+	position: relative;
+    padding: 5px 5px;
+    margin-left: 5%;
+    background-color: #2ECC71;
+    border: 3px solid #2ECC71;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 10%;
+    cursor: pointer; 	
+}
+
+select{
+    width: 9%;
+    height: 5%;
+    padding: 5px 10px;
+    margin-left: 2.2%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#form-line{
+	position: relative;
+	margin-top: 6%;
+ 	width: 90%;
+}
+
+.content-wrapper{
+	position: relative;
+    top: 4%; left: 50%;
+    margin-left: -36.5%;
+    height: 69%;
+    width: 73%;
+    background-color: white;
+}
+
+#title-line{
+	position: relative;
+	top: 15%;
+	width: 75%;
+	opacity: 0.8;
+}
+
+#title-name{
+	padding: 5px;
+	width: 19%;
+	font-weight: bolder;
+}
+
+#title-sur{
+    padding: 5px;
+    width: 19%;
+    font-weight: bolder;
+}
+
+#title-user{
+    padding: 5px;
+    width: 19%;
+    font-weight: bolder;
+}
+
+#title-role{
+    padding: 5px;
+    width: 17%;
+    font-weight: bolder;
+}
+
+.content-container{
+	position: relative;
+    top: 5%; left: 50%;
+    margin-left: -37.5%;
+    width: 75%;
+}
+
+.data{
+    padding: 5px;
+}
+
+.data-name{
+    padding: 5px;
+    text-align: center;
+}
+
+.data-sur{
+    padding: 5px;
+    text-align: center;
+}
+
+.data-user{
+    padding: 5px;
+    text-align: center;
+}
+
+.data-role{
+    padding: 5px;
+    text-align: center;
+}
