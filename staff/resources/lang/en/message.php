@@ -15,7 +15,11 @@
 
 		//student
 		'search_detail' => 'Enter Student ID e.g. ',
-		//'name' use as admin part
+		's_name' => 'Name: ',
+		's_id' => 'Student ID: ',
+		's_phone' => 'Phone: ',
+		's_face' => 'Facebook: ',
+		's_address' => 'Address: ',
 
 		//subject
 		'year' => 'Year: ',
@@ -35,7 +39,7 @@
 		'role_staff' => 'Staff',
 		'role_admin' => 'Admin',
 		'add_staff' => 'Add User',
-		'name' => 'Name',
-		'surname' => 'Surname',
-		'username' => 'Username'
+		'a_name' => 'Name',
+		'a_surname' => 'Surname',
+		'a_username' => 'Username'
 	];

@@ -11,8 +11,15 @@
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
+});
+*/
+
+//route to staff index page
+Route::get('/', function () {
+    return view('staff.index');
 });
 
 //route to staff mode
@@ -33,12 +40,8 @@ Route::get('change/{locale}', function ($locale) {
 	return Redirect::back();
 });
 
-Route::get('studentSearch' , 'StudentController@studentSearch');
+Route::post('student_search' , 'StudentController@student_search');
 
-Route::post('subjectSearch' , 'SubjectController@subjectSearch');
-
-Route::resource('/student_info', 'StudentController');
+Route::post('subject_search' , 'SubjectController@subjectSearch');
 
 Route::resource('/admin_management', 'StaffController');
-
-Route::resource('/subject_suggestion', 'SubjectController');

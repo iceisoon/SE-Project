@@ -14,8 +14,7 @@ class StudentController extends Controller
      */
     public function index()
     {
-        $info = student::all();
-        return view('staff.student_info', compact('info', $info));
+
     }
     
 
@@ -39,13 +38,28 @@ class StudentController extends Controller
     {
         //
     }
-    public function studentSearch(Request $request){
-        $id=$request->get('std_search');
-        $info = student::all();
+    public function student_search(Request $request){
+        $id=$request->input('std_search');
+        $info = student::where('std_id', '=', $id)->first();
+        $tmp_link = explode(" ", $info->facebook); //split space in facenook name
+        $link = "";
 
-        return view('staff.student_info')
-        ->with('id',$id)
-        ->with('info',$info);
+        //loop to sum each split text without space 
+        foreach ($tmp_link as $index) {
+            $link = $link.$index;
+        }
+
+        if($info === null){
+            return view('staff.student_info')
+            ->with('check', false);
+        }
+        else{
+            return view('staff.student_info')
+            ->with('id',$id)
+            ->with('info',$info)
+            ->with('link', $link)
+            ->with('check', true);
+        }
     }
 
     /**

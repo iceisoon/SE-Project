@@ -32,3 +32,36 @@ input[type=submit], input[type=button]{
 	margin-top: 5%;
  	width: 90%;
 }
+
+.content-wrapper{
+	position: relative;
+	top: 5%; left: 5%;
+	width: 50%; height: auto;
+	padding: 3%;
+	background-color: white;
+	border: 1px solid #C8C8C8;
+	border-radius: 15px;
+}
+
+th{
+	font-weight: bold;
+	text-align: left;
+	height: 35px;
+	width: 130px;
+}
+
+td{
+	max-width: 400px;
+	overflow-wrap: break-word;
+}
+
+#face-link{
+	color: blue;
+}
+
+#no-data{
+	text-align: center;
+	color: #636b6f;
+	font-weight: bolder;
+	font-size: 24px;
+}
